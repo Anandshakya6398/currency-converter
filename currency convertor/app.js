@@ -67,11 +67,6 @@ const fetchDataRespone = async () => {
       const response = await fetch(apiUrl);
       if (response.ok) {
         return await response.json();
-      // } else {
-      //   console.error(
-      //     `API call to ${apiUrl} failed with status code ${response.status}`
-      //   );
-        // return null;
       }
     } catch (error) {
       // console.error(`Error fetching data from ${apiUrl}: ${error.message}`);
